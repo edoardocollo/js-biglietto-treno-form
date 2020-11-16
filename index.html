@@ -12,20 +12,58 @@
 <section id="form_section">
   <h2>calcola il prezzodel tuo biglietto</h2>
   <div class="container">
-    <div class="row">
-      <input id="user_name" type="text" name="" value="">
-      <input id="km_tratta" type="number" name="" value="">
-      <select id="fascia_eta" class="" name="">
-        <option value="maggiorenne">maggiorenne</option>
-        <option value="minorenne">minorenne</option>
-        <option value="silver">silver</option>
-      </select>
-    </div>
+    <div class="row row_input">
+
+
+
+      <div class="input_wrapper">
+
+        <div class="input_col">
+          <label for="username">Nome Cognome</label>
+          <input id="user_name" type="text" name="username" value="">
+        </div>
+        <!-- /.input_col -->
+
+
+        <div class="input_col">
+          <label for="tratta">Km da percorrere</label>
+          <input id="km_tratta" type="text" name="tratta" value="">
+        </div>
+        <!-- /.input_col -->
+
+
+
+        <div class="input_col">
+          <label for="select">Fascia di età</label>
+          <select id="fascia_eta" class="" name="select">
+            <option value="maggiorenne">maggiorenne</option>
+            <option value="minorenne">minorenne</option>
+            <option value="silver">silver</option>
+          </select>
+        </div>
+        <!-- /.input_col -->
+
+
+
+      </div>
+      </div>
+      <!-- /.input_wrapper -->
+
+
+
     <div class="row">
       <button id="genera" type="button" name="button">Genera</button>
       <button id="annulla" type="button" name="button">Annulla</button>
     </div>
+    <!-- /.row button -->
+
+
+
   </div>
+  <!-- /.row.row_input -->
+
+
+
 </section>
 <!-- /#form_section -->
 
@@ -33,14 +71,17 @@
 
 <section id="ticket_section">
   <h2>il tuo biglietto</h2>
+
   <div class="container_ticket">
     <h4>dettagli passeggieri</h4>
+
     <div class="recap_container">
       <div class="recap_name">
         <h4>nome passeggiero</h4>
         <span id="ticket_username"></span>
       </div>
       <!-- /.recap_name -->
+
       <div class="recap_table">
         <table>
           <tr>
@@ -58,10 +99,24 @@
         </table>
       </div>
       <!-- /.recap_table -->
+
     </div>
+    <!-- /.recap_container -->
+
   </div>
+  <!-- /.container_ticket -->
 </section>
 <!-- /#ticket_section -->
+
+
+
+<div id="cross_over">
+  <div id="refresh_box">
+    <h1>FATAL ERROR</h1>
+    <button id="refresh" type="button" name="button">Ricomincia da capo</button>
+  </div>
+</div>
+<!-- /.cross_over -->
 <script type="text/javascript" src="assets/js/main.js">
 
 </script>
