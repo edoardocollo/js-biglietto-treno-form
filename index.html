@@ -13,17 +13,17 @@
   <h2>calcola il prezzodel tuo biglietto</h2>
   <div class="container">
     <div class="row">
-      <input type="text" name="" value="">
-      <input type="number" name="" value="">
-      <select class="" name="">
+      <input id="user_name" type="text" name="" value="">
+      <input id="km_tratta" type="number" name="" value="">
+      <select id="fascia_eta" class="" name="">
         <option value="maggiorenne">maggiorenne</option>
         <option value="minorenne">minorenne</option>
         <option value="silver">silver</option>
       </select>
     </div>
     <div class="row">
-      <button>Genera</button>
-      <button>Annulla</button>
+      <button id="genera" type="button" name="button">Genera</button>
+      <button id="annulla" type="button" name="button">Annulla</button>
     </div>
   </div>
 </section>
@@ -38,6 +38,7 @@
     <div class="recap_container">
       <div class="recap_name">
         <h4>nome passeggiero</h4>
+        <span id="ticket_username"></span>
       </div>
       <!-- /.recap_name -->
       <div class="recap_table">
@@ -49,10 +50,10 @@
             <td>costo biglietto</td>
           </tr>
           <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
+            <td id="offerta"></td>
+            <td id="carrozza"></td>
+            <td id="codice_cp"></td>
+            <td id="costo_biglietto"></td>
           </tr>
         </table>
       </div>
@@ -61,6 +62,8 @@
   </div>
 </section>
 <!-- /#ticket_section -->
+<script type="text/javascript" src="assets/js/main.js">
 
+</script>
 </body>
 </html>
